@@ -1,0 +1,17 @@
+---
+to: src/components/<%= h.inflection.classify(name) %>/styles.js
+---
+<% componentName = h.inflection.classify(name) -%>
+import { css } from 'react-emotion';
+import { colors } from '../../styles';
+import { mediaQuery } from '../../styles/breakpoints';
+
+export default {
+  container: css`
+    margin-top: 0;
+    color: ${colors.black};
+    ${mediaQuery.medium(css`
+      color: ${colors.sky};
+    `)}
+  `
+}
