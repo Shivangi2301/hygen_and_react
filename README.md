@@ -18,4 +18,5 @@ npm install -g hygen
 ### Hygen Initialization
 
 npx hygen init self 
+
 Run this command once per project.
